@@ -29,7 +29,7 @@ var $if = 35;
 */
 
 
-/************ Type coercion and variable mutation **************/
+/************ Type coercion and variable mutation *************
 var fName = 'john';
 var age = 28;
 
@@ -49,8 +49,69 @@ job = 'driver'
 alert(fName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried );
 var lastName = prompt('What is his last name?');
 console.log(fName + ' ' + lastName);
- 
+*/
 
 
 
+/************** Basic Operator ****************  
+var now, yearJohn, yearMark;
+now = 2024;
+ageJohn = 28;
+ageMark = 23;
 
+// Math Operators
+yearJohn = now - ageJohn;
+yearMark = now - ageMark;
+
+console.log(yearJohn, yearMark);
+
+console.log(now * 2);
+console.log(now - 2);
+console.log(now / 2);
+console.log(now % 3); // 2
+
+// Logical operators
+var johnOlder = ageJohn > ageMark;
+console.log(johnOlder); // true
+
+// Type of Operators
+var x;
+console.log(typeof johnOlder);
+console.log(typeof ageJohn);
+console.log(typeof 'Something');
+console.log(typeof x);
+*/
+
+
+/************************************
+ * Operators Precedence
+ */
+var now = 2024;
+var yearJohn = 1989;
+var fullAge = 20;
+
+// Multiple operators
+var isFullAge = now - yearJohn >= fullAge;
+console.log(isFullAge); // true
+
+// Grouping
+var ageJohn = now - yearJohn;
+var ageMark = 34;
+var average = (ageJohn + ageMark) / 2;
+console.log(average); // 34.5
+
+// Multiple assignments
+var x, y;
+x = y = (3 + 5) * 4 - 6; // here is first execute 'y' value, then execute x = y;
+console.log(x, y); // 26 26
+
+// More operators
+x *= 2 // x = x * 2;
+console.log(x); // 52
+x += 10 // x = x + 2;
+console.log(x); // 62
+
+x++; // x = x + 1; // x += 1; Increase one by one
+console.log(x);
+x--; // x = x + 1; // x += 1; Decrease one by one
+console.log(x);
