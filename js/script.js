@@ -28,3 +28,29 @@ var $if = 35;
 
 */
 
+
+/************ Type coercion and variable mutation **************/
+var fName = 'john';
+var age = 28;
+
+// type coercion
+console.log(fName + ' ' + age);
+
+var job, isMarried;
+job = 'teacher';
+isMarried = false;
+
+console.log(fName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried );
+
+
+// variable mutation : So before it was a number and now it is new and it's a string. So that is the magic of the JavaScript dynamic typing.
+age = 'twenty eight';
+job = 'driver'
+alert(fName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried );
+var lastName = prompt('What is his last name?');
+console.log(fName + ' ' + lastName);
+ 
+
+
+
+
